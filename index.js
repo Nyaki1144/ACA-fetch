@@ -1,5 +1,6 @@
-const lists = document.querySelector(".lists");
 const btn = document.querySelector(".btn");
+const imgWrapper = document.querySelector(".img-wrapper");
+imgWrapper.innerHTML = `<img class="img" src="./39.gif" alt="img" />`;
 
 btn.addEventListener("click", () => {
   const lists = document.querySelector(".lists");
@@ -9,6 +10,7 @@ btn.addEventListener("click", () => {
     .then((el) =>
       el.forEach((element) => {
         const li = document.createElement("li");
+
         li.classList.add("list");
 
         li.innerHTML = `
@@ -19,6 +21,7 @@ btn.addEventListener("click", () => {
                              `;
 
         lists.append(li);
+        imgWrapper.remove();
       })
     );
 });
