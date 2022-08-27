@@ -1,8 +1,9 @@
 const btn = document.querySelector(".btn");
 const imgWrapper = document.querySelector(".img-wrapper");
-imgWrapper.innerHTML = `<img class="img" src="./39.gif" alt="img" />`;
 
 btn.addEventListener("click", () => {
+  imgWrapper.innerHTML = `<img class="img" src="./39.gif" alt="img" />`;
+
   const lists = document.querySelector(".lists");
 
   fetch("https://jsonplaceholder.typicode.com/posts")
