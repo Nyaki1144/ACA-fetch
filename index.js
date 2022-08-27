@@ -9,13 +9,13 @@ btn.addEventListener("click", () => {
     .then((el) =>
       el.forEach((element) => {
         const li = document.createElement("li");
-        li.classList.add = "list";
+        li.classList.add("list");
 
         li.innerHTML = `
-                                <div class="userId">${element.userId}</div>
-                                <div class="id">${element.id}</div>
-                                <div class="title">${element.title}</div>
-                                <div class="body">${element.body}</div>
+                                <div class="padd userId">${element.userId}</div>
+                                <div class="padd id">${element.id}</div>
+                                <div class="color title">${element.title}</div>
+                                <div class=" body">${element.body}</div>
                              `;
 
         lists.append(li);
