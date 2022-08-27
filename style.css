@@ -7,10 +7,13 @@ li {
   list-style-type: none;
   padding: 0;
   margin: 20px;
+  border: 2px solid #000;
+  background-color: antiquewhite;
 }
 
 .padd {
   padding-bottom: 20px;
+  text-align: center;
 }
 
 .userId,
