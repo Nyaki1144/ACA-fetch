@@ -14,11 +14,11 @@ btn.addEventListener("click", () => {
         li.classList.add("list");
 
         li.innerHTML = `
-                                <div class="padd userId">${element.userId}</div>
-                                <div class="padd id">${element.id}</div>
-                                <div class="color title">${element.title}</div>
-                                <div class=" body">${element.body}</div>
-                             `;
+                        <div class="padd userId">${element.userId}</div>
+                        <div class="padd id">${element.id}</div>
+                        <div class="color title">${element.title}</div>
+                        <div class=" body">${element.body}</div>
+                    `;
 
         lists.append(li);
         imgWrapper.remove();
